@@ -1,0 +1,29 @@
+<div *ngIf="mostrar">
+	{{numero}}
+
+</div>
+<div *ngFor="let numero of arreglo">
+	{{numero + 4}}
+</div>
+
+<div *ngIf="mostrar">
+	<div *ngFor="let nombre of arreglo2">
+	
+	<p>mi nombre es: {{nombre}} </p>
+</div>
+</div>
+<div *ngIf="mostrar">
+	<div *ngFor="let carlos of familia">
+	{{carlos}}
+</div>
+</div>
+
+
+<button type="button" class="btn btn-primary" (click)="mostrare()" >mostrar</button>
+<button type="button" class="btn btn-primary" (click)="incrementar()" >incrementar</button>
+<button type="button" class="btn btn-primary" (click)="decrementar()" >decrementar</button>
+<button type="button" class="btn btn-primary" (click)="mostrarNombres()" >Mostrar Nombre</button>
+
+<button type="button" class="btn btn-primary" (click)="mostrarFam()" >famcarl</button>
+
+<p>Hola mundo</p>
